@@ -1,0 +1,18 @@
+mail:
+  description: Beschreibung
+  expiry: Frist
+  name: Name
+  new-task:
+    intro: 'Ihnen wurde die folgende Workflow Aufgabe zugewiesen:'
+    title: Neue Aufgabe zugewiesen
+  no-tasks: Keine Aufgaben
+  responsible: Verantwortlich
+  start: Erstellt am
+  summary:
+    intro: 'Liste der offenen Workflow Aufgaben:'
+    title: Tägliche Zusammenfassung
+  task: Aufgabe
+  task-prio: Prio
+  task-resume: Aufnehmen
+  task-resume-tooltip: Task aufnehmen
+  task-start: Erstellt am

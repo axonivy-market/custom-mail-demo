@@ -1,0 +1,18 @@
+mail:
+  description: Désignation
+  expiry: Expiration
+  name: Nom
+  new-task:
+    intro: 'La tâche suivante a été attribué à vous:'
+    title: Nouvelle tâche assignée
+  no-tasks: Pas de tâches
+  responsible: Responsable
+  start: Créé le
+  summary:
+    intro: 'Les tâches suivantes sont en attente de traitement:'
+    title: Résumé journalier
+  task: Tâche
+  task-prio: Prio
+  task-resume: Traiter
+  task-resume-tooltip: Traiter tâches
+  task-start: Créé le

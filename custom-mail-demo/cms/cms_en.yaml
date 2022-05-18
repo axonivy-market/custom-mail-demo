@@ -1,0 +1,18 @@
+mail:
+  description: Description
+  expiry: Expiry
+  name: Name
+  new-task:
+    intro: 'The following task has been assigned to you:'
+    title: New Task assigned
+  no-tasks: No tasks
+  responsible: Responsible
+  start: Created on
+  summary:
+    intro: 'The following tasks are waiting to be processed:'
+    title: Daily task summary
+  task: Task
+  task-prio: Prio
+  task-resume: Run
+  task-resume-tooltip: Run task
+  task-start: Created on
