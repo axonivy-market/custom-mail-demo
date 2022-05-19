@@ -1,8 +1,9 @@
 # Custom Mail Demo
 
-This demo shows how new task notification mails
-and daily task summary mails can be customized by providing
-own mail processes.
+Axon Ivy’s Custom Mail Demo shows how to customize the task notification emails and daily task summary emails by providing your own mail processes. This demo:
+
+- Supports you with an easy-to-copy example implementation to reduce your integration effort.
+- Enables low code citizen developers to modify standard functionalities of the Axon Ivy Engine easily.
 
 ![Mail](mail.png)
 
@@ -11,10 +12,7 @@ Learn more about custom mail processes in our
 
 ## Demo
 
-The process `mail` has two process start. One for the
-new task mail notification and one for the daily task
-summary mail. Feel free to take this demo as template
-to implement your own mail processes.
+The demo process `mail` has two process starts. One for the new task email notification and one for the daily task summary email. Feel free to take this demo as a template to implement your own email processes.
 
 ![Mail Processes](processes.png)
 
