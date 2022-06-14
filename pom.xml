@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.axonivy.demo.custom.mail</groupId>
   <artifactId>custom-mail-demo-modules</artifactId>
-  <version>9.4.2-SNAPSHOT</version>
+  <version>9.4.2</version>
   <packaging>pom</packaging>
 
   <modules>
@@ -12,7 +12,7 @@
 
   <scm>
     <developerConnection>scm:git:https://github.com/axonivy-market/custom-mail-demo.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>v9.4.2</tag>
   </scm>
 
   <build>
