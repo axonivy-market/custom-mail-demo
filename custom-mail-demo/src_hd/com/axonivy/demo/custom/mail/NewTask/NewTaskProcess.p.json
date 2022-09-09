@@ -1,5 +1,5 @@
 {
-  "format" : "9.4.10",
+  "format" : "9.4.20",
   "id" : "180D60D4BAC2DF9E",
   "data" : "com.axonivy.demo.custom.mail.NewTask.NewTaskData",
   "kind" : "HTML_DIALOG",
@@ -23,7 +23,7 @@
       },
       "visual" : {
         "at" : { "x" : 96, "y" : 64 },
-        "labelOffset" : { "x" : -20, "y" : 15 }
+        "labelOffset" : { "x" : 37, "y" : 35 }
       },
       "connect" : { "id" : "f2", "to" : "f1" }
     }, {

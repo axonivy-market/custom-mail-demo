@@ -12,7 +12,7 @@
   <ui:define name="content">
     <div>#{ivy.cms.co('/mail/summary/intro')}</div>
     
-    <p:dataTable id="taskTable" widgetVar="taskTable" var="task" value="#{data.tasks}" emptyMessage="#{ivy.cms.co('/mail/no-tasks')}" rowIndexVar="row" sortOrder="DESCENDING">
+    <p:dataTable id="taskTable" widgetVar="taskTable" var="task" value="#{data.tasks}" emptyMessage="#{ivy.cms.co('/mail/no-tasks')}" rowIndexVar="row" sortOrder="DESCENDING" lazy="false">
       <p:column headerText="#" style="width:40px;">
         <a href="#{ivy.html.startref('13FE81AF3A82F57F/TaskDetails.ivp')}?detailTaskId=#{task.id}" id="buttonTaskDetail" title="Details Task [#{task.id}]">
           <h:graphicImage name="images/task.png" alt="task detail"/>
