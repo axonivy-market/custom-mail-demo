@@ -1,8 +1,10 @@
 {
-  "format" : "9.4.20",
+  "format" : "10.0.0",
   "id" : "180D611C92D66220",
-  "data" : "com.axonivy.demo.custom.mail.DailTaskSummary.DailTaskSummaryData",
   "kind" : "HTML_DIALOG",
+  "config" : {
+    "data" : "com.axonivy.demo.custom.mail.DailTaskSummary.DailTaskSummaryData"
+  },
   "elements" : [ {
       "id" : "f0",
       "type" : "HtmlDialogStart",
