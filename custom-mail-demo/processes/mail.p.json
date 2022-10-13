@@ -1,7 +1,9 @@
 {
-  "format" : "9.4.20",
+  "format" : "10.0.0",
   "id" : "180D6008051E52D8",
-  "data" : "com.axonivy.demo.custom.mail.Data",
+  "config" : {
+    "data" : "com.axonivy.demo.custom.mail.Data"
+  },
   "elements" : [ {
       "id" : "f0",
       "type" : "RequestStart",
