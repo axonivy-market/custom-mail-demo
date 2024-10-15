@@ -1,3 +1,7 @@
+# Deprecation
+
+Der Custom Mail Process existiert seit Axon Ivy 11.2 nicht mehr. Um den Inhalt einer E-Mail anzupassen, kannst du das E-Mail-Template ändern. Mehr Informationen findest du unter [Benachrichtigungen](https://dev.axonivy.com/doc/11.2/concepts/notification/index.html).
+
 # Custom Mail Demo
 
 Axon Ivy's Custom Mail Demo zeigt dir, wie du die Task-Benachrichtigungs-E-Mails und täglichen Aufgabenübersichten anpassen kannst, indem du deine eigenen Mail-Prozesse bereitstellst
