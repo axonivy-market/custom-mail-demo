@@ -1,3 +1,8 @@
+# Deprecation
+
+Custom Mail Process no longer exists since Axon Ivy 11.2. To change the content of a
+mail you can change the mail template. Read more about [notifications](https://dev.axonivy.com/doc/11.2/concepts/notification/index.html).
+
 # Custom Mail Demo
 
 Axon Ivy’s Custom Mail Demo shows how to customize the task notification emails and daily task summary emails by providing your own mail processes. This demo:
