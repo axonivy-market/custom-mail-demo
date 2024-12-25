@@ -5,11 +5,9 @@
   "isBusinessCaseData" : false,
   "fields" : [ {
     "name" : "user",
-    "type" : "ch.ivyteam.ivy.security.IUser",
-    "modifiers" : [ "PERSISTENT" ]
+    "type" : "ch.ivyteam.ivy.security.IUser"
   }, {
     "name" : "task",
-    "type" : "ch.ivyteam.ivy.workflow.ITask",
-    "modifiers" : [ "PERSISTENT" ]
+    "type" : "ch.ivyteam.ivy.workflow.ITask"
   } ]
 }

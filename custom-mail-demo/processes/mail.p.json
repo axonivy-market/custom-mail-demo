@@ -48,7 +48,7 @@
             { "name" : "notificationSecurityMemberId", "type" : "String", "desc" : "" }
           ],
           "map" : {
-            "out.tasks" : "ivy.wf.findWorkTasks(ivy.security.users().findById(param.notificationSecurityMemberId), 0, -1).getResultList()",
+            "out.tasks" : "ch.ivyteam.ivy.workflow.query.TaskQuery.create().where().canWorkOn(ivy.security.users().findById(param.notificationSecurityMemberId)).executor().results( 0, -1)",
             "out.user" : "ivy.security.users().findById(param.notificationSecurityMemberId)"
           }
         },
