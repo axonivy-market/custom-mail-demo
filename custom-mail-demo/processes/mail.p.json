@@ -1,5 +1,5 @@
 {
-  "format" : "10.0.0",
+  "$schema" : "https://json-schema.axonivy.com/process/12.0.0/process.json",
   "id" : "180D6008051E52D8",
   "config" : {
     "data" : "com.axonivy.demo.custom.mail.Data"
@@ -9,25 +9,28 @@
       "type" : "RequestStart",
       "name" : "MailNotification_NewTask.ivp",
       "config" : {
-        "callSignature" : "MailNotification_NewTask",
+        "signature" : "MailNotification_NewTask",
         "input" : {
           "params" : [
-            { "name" : "notificationTaskId", "type" : "Number" },
-            { "name" : "notificationSecurityMemberId", "type" : "String" }
+            { "name" : "notificationTaskId", "type" : "Number", "desc" : "" },
+            { "name" : "notificationSecurityMemberId", "type" : "String", "desc" : "" }
           ],
           "map" : {
             "out.task" : "ivy.wf.findTask(param.notificationTaskId as Long)",
             "out.user" : "ivy.security.users().findById(param.notificationSecurityMemberId)"
           }
         },
-        "outLink" : "MailNotification_NewTask.ivp",
-        "showInStartList" : false
+        "request" : {
+          "isVisibleOnStartList" : false
+        }
       },
       "visual" : {
         "at" : { "x" : 96, "y" : 64 },
         "labelOffset" : { "x" : 18, "y" : 46 }
       },
-      "connect" : { "id" : "f5", "to" : "f4" }
+      "connect" : [
+        { "id" : "f5", "to" : "f4" }
+      ]
     }, {
       "id" : "f1",
       "type" : "TaskEnd",
@@ -39,36 +42,34 @@
       "type" : "RequestStart",
       "name" : "MailNotification_DailyTaskSummary.ivp",
       "config" : {
-        "callSignature" : "MailNotification_DailyTaskSummary",
+        "signature" : "MailNotification_DailyTaskSummary",
         "input" : {
           "params" : [
-            { "name" : "notificationSecurityMemberId", "type" : "String" }
+            { "name" : "notificationSecurityMemberId", "type" : "String", "desc" : "" }
           ],
           "map" : {
-            "out.tasks" : "ivy.wf.findWorkTasks(ivy.security.users().findById(param.notificationSecurityMemberId), 0, -1).getResultList()",
+            "out.tasks" : "ch.ivyteam.ivy.workflow.query.TaskQuery.create().where().canWorkOn(ivy.security.users().findById(param.notificationSecurityMemberId)).executor().results( 0, -1)",
             "out.user" : "ivy.security.users().findById(param.notificationSecurityMemberId)"
           }
         },
-        "outLink" : "MailNotification_DailyTaskSummary.ivp",
-        "showInStartList" : false
+        "request" : {
+          "isVisibleOnStartList" : false
+        }
       },
       "visual" : {
         "at" : { "x" : 96, "y" : 160 },
         "labelOffset" : { "x" : 41, "y" : 46 }
       },
-      "connect" : { "id" : "f9", "to" : "f8" }
+      "connect" : [
+        { "id" : "f9", "to" : "f8" }
+      ]
     }, {
       "id" : "f4",
       "type" : "DialogCall",
       "name" : "NewTask",
       "config" : {
-        "dialogId" : "com.axonivy.demo.custom.mail.NewTask",
-        "startMethod" : "start(ch.ivyteam.ivy.security.IUser,ch.ivyteam.ivy.workflow.ITask)",
+        "dialog" : "com.axonivy.demo.custom.mail.NewTask:start(ch.ivyteam.ivy.security.IUser,ch.ivyteam.ivy.workflow.ITask)",
         "call" : {
-          "params" : [
-            { "name" : "user", "type" : "ch.ivyteam.ivy.security.IUser" },
-            { "name" : "task", "type" : "ch.ivyteam.ivy.workflow.ITask" }
-          ],
           "map" : {
             "param.user" : "in.user",
             "param.task" : "in.task"
@@ -78,7 +79,9 @@
       "visual" : {
         "at" : { "x" : 328, "y" : 64 }
       },
-      "connect" : { "id" : "f2", "to" : "f1" }
+      "connect" : [
+        { "id" : "f2", "to" : "f1" }
+      ]
     }, {
       "id" : "f6",
       "type" : "TaskEnd",
@@ -90,13 +93,8 @@
       "type" : "DialogCall",
       "name" : "DailTaskSummary",
       "config" : {
-        "dialogId" : "com.axonivy.demo.custom.mail.DailTaskSummary",
-        "startMethod" : "start(ch.ivyteam.ivy.security.IUser,List<ch.ivyteam.ivy.workflow.ITask>)",
+        "dialog" : "com.axonivy.demo.custom.mail.DailTaskSummary:start(ch.ivyteam.ivy.security.IUser,List<ch.ivyteam.ivy.workflow.ITask>)",
         "call" : {
-          "params" : [
-            { "name" : "user", "type" : "ch.ivyteam.ivy.security.IUser" },
-            { "name" : "tasks", "type" : "List<ch.ivyteam.ivy.workflow.ITask>" }
-          ],
           "map" : {
             "param.user" : "in.user",
             "param.tasks" : "in.tasks"
@@ -105,8 +103,10 @@
       },
       "visual" : {
         "at" : { "x" : 328, "y" : 160 },
-        "size" : { "width" : 128, "height" : 60 }
+        "size" : { "width" : 128 }
       },
-      "connect" : { "id" : "f7", "to" : "f6" }
+      "connect" : [
+        { "id" : "f7", "to" : "f6" }
+      ]
     } ]
 }
