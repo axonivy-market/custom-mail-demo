@@ -1,37 +1,39 @@
-# Deprecation
+# Veraltet
 
-#Benutzerdefiniert Post Arbeitsgang existiert nicht mehr seit #Axon Efeu 11.2.
-Zu wechseln den Inhalt von einer Post kannst du wechseln die Post Vorlage. Lies
-etwa More
-[Mitteilungen](https://dev.axonivy.com/doc/11.2/concepts/notification/index.html).
+Der benutzerdefinierte E-Mail-Prozess existiert seit Axon Ivy 11.2 nicht mehr.
+Um den Inhalt einer E-Mail zu ändern, können Sie die E-Mail-Vorlage ändern.
+Weitere Informationen finden Sie unter
+[Benachrichtigungen](https://dev.axonivy.com/doc/11.2/concepts/notification/index.html).
 
-# #Benutzerdefiniert Post Demo
+# Benutzerdefinierte E-Mail-Demo
 
-#Axon Efeus #Benutzerdefiniert Post Demo Vorstellungen zu anpassen wie die Task
-Mitteilung #Email und tägliche Task Übersicht #Email versehen mal eure eigene
-Post Arbeitsgänge. Diese Demo:
+Die Custom Mail Demo von Axon Ivy zeigt, wie Sie die E-Mails mit
+Aufgabenbenachrichtigungen und täglichen Aufgabenübersichten anpassen können,
+indem Sie Ihre eigenen E-Mail-Prozesse bereitstellen. Diese Demo:
 
-- Unterstützt du mit ein leichtes-zu-Kopie Beispiel Ausführung zu heruntersetzen
-  eure Integration Anstrengung.
-- Aktiviert niederen Code Bürger Entwickler zu modifizieren tarifliche
-  Funktionalitäten von den #Axon Efeu Motor sicher.
+- Unterstützt Sie mit einer einfach zu kopierenden Beispielimplementierung, um
+  Ihren Integrationsaufwand zu reduzieren.
+- Ermöglicht Low-Code-Citizen-Developern, Standardfunktionen der Axon Ivy Engine
+  einfach zu ändern.
 
-![Post](mail.png)
+![Mail](mail.png)
 
-Lern More von #benutzerdefiniert Post Arbeitsgänge herein unser
-[Dokumentation](https://developer.axonivy.com/doc/dev/designer-guide/user-interface/email-notifications/index.html)
+Weitere Informationen zu benutzerdefinierten E-Mail-Prozessen finden Sie in
+unserer
+[Dokumentation](https://developer.axonivy.com/doc/dev/designer-guide/user-interface/email-notifications/index.html).
 
 ## Demo
 
-Der Demo Arbeitsgang `Post` hat zwei #verarbeiten startet. #Man für den neuen
-Task #Email Mitteilung und #man für den täglichen Task Übersicht #Email. Spür
-frei zu nehmen diese Demo da eine Vorlage zu implementieren eure eigene #Email
-Arbeitsgänge.
+Der Demo-Prozess `mail` umfasst zwei Prozessstarts. Einen für die
+E-Mail-Benachrichtigung über neue Aufgaben und einen für die tägliche
+E-Mail-Zusammenfassung der Aufgaben. Sie können diese Demo gerne als Vorlage für
+die Implementierung Ihrer eigenen E-Mail-Prozesse verwenden.
 
-![Post Arbeitsgänge](processes.png)
+![Mail-Prozesse](processes.png)
 
 ## Einrichtung
 
-#Aufbieten dieses Demo Projekt zu einen #Axon Efeu Motor und auslösen die
-Kreation von einem Task. Alle zuständigen Nutzer wollen einen neuen Task
-Mitteilung Post bekommen mit dem Inhalt von diesem tariflichen Arbeitsgang.
+Stellen Sie dieses Demo-Projekt auf einer Axon Ivy Engine bereit und lösen Sie
+die Erstellung einer Aufgabe aus. Alle zuständigen Benutzer erhalten eine
+E-Mail-Benachrichtigung über eine neue Aufgabe mit dem Inhalt dieses
+Standardprozesses.
