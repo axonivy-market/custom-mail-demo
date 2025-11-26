@@ -31,7 +31,7 @@ die Implementierung Ihrer eigenen E-Mail-Prozesse verwenden.
 
 ![Mail-Prozesse](processes.png)
 
-## Einrichtung
+## Setup
 
 Stellen Sie dieses Demo-Projekt auf einer Axon Ivy Engine bereit und lösen Sie
 die Erstellung einer Aufgabe aus. Alle zuständigen Benutzer erhalten eine
