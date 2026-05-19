@@ -3,7 +3,7 @@
 
   <groupId>com.axonivy.demo.custom.mail</groupId>
   <artifactId>custom-mail-demo-product</artifactId>
-  <version>13.2.0</version>
+  <version>13.2.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <build>
