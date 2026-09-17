@@ -1,21 +1,39 @@
-# Deprecation
+# Veraltet
 
-Der Custom Mail Process existiert seit Axon Ivy 11.2 nicht mehr. Um den Inhalt einer E-Mail anzupassen, kannst du das E-Mail-Template ändern. Mehr Informationen findest du unter [Benachrichtigungen](https://dev.axonivy.com/doc/11.2/concepts/notification/index.html).
+Der benutzerdefinierte E-Mail-Prozess existiert seit Axon Ivy 11.2 nicht mehr.
+Um den Inhalt einer E-Mail zu ändern, können Sie die E-Mail-Vorlage ändern.
+Weitere Informationen finden Sie unter
+[Benachrichtigungen](https://dev.axonivy.com/doc/11.2/concepts/notification/index.html).
 
-# Custom Mail Demo
+# Benutzerdefinierte E-Mail-Demo
 
-Axon Ivy's Custom Mail Demo zeigt dir, wie du die Task-Benachrichtigungs-E-Mails und täglichen Aufgabenübersichten anpassen kannst, indem du deine eigenen Mail-Prozesse bereitstellst
+Die Custom Mail Demo von Axon Ivy zeigt, wie Sie die E-Mails mit
+Aufgabenbenachrichtigungen und täglichen Aufgabenübersichten anpassen können,
+indem Sie Ihre eigenen E-Mail-Prozesse bereitstellen. Diese Demo:
+
+- Unterstützt Sie mit einer einfach zu kopierenden Beispielimplementierung, um
+  Ihren Integrationsaufwand zu reduzieren.
+- Ermöglicht Low-Code-Citizen-Developern, Standardfunktionen der Axon Ivy Engine
+  einfach zu ändern.
 
 ![Mail](mail.png)
 
-Erfahre mehr über benutzerdefinierte Mail-Prozesse in unserer [Dokumentation](https://developer.axonivy.com/doc/dev/designer-guide/user-interface/email-notifications/index.html)
+Weitere Informationen zu benutzerdefinierten E-Mail-Prozessen finden Sie in
+unserer
+[Dokumentation](https://developer.axonivy.com/doc/dev/designer-guide/user-interface/email-notifications/index.html).
 
 ## Demo
 
-Der Demo-Prozess `mail` hat zwei Prozessstarts: Einen für die neue Aufgabenbenachrichtigung per E-Mail und einen für die tägliche Aufgabenübersicht per E-Mail. Du kannst diese Demo gerne als Vorlage verwenden, um deine eigenen E-Mail-Prozesse zu implementieren.
+Der Demo-Prozess `mail` umfasst zwei Prozessstarts. Einen für die
+E-Mail-Benachrichtigung über neue Aufgaben und einen für die tägliche
+E-Mail-Zusammenfassung der Aufgaben. Sie können diese Demo gerne als Vorlage für
+die Implementierung Ihrer eigenen E-Mail-Prozesse verwenden.
 
-![Mail Processes](processes.png)
+![Mail-Prozesse](processes.png)
 
 ## Setup
 
-Deploye dieses Demo-Projekt auf eine Axon Ivy Engine und triggere die Erstellung einer Aufgabe. Alle verantwortlichen Benutzer erhalten eine neue Aufgabenbenachrichtigung per E-Mail mit dem Inhalt dieses Standardprozesses.
+Stellen Sie dieses Demo-Projekt auf einer Axon Ivy Engine bereit und lösen Sie
+die Erstellung einer Aufgabe aus. Alle zuständigen Benutzer erhalten eine
+E-Mail-Benachrichtigung über eine neue Aufgabe mit dem Inhalt dieses
+Standardprozesses.
